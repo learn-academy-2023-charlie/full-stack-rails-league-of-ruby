@@ -1,0 +1,11 @@
+<h2> Create your blog. </h2>
+<%= form_with model: @blog do |form| %>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+  <br>
+  <%= form.label :content %>
+  <%= form.text_field :content %>
+  <br>
+  <%= form.submit 'Create blog' %>
+
+  <p><%= link_to 'Click me to go back to homepage',"/"  %></p>
